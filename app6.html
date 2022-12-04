@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formular de validare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <h4>Creare cont</h4>
+        <div class="input-section">
+          <label>Primul nume <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Introdu primul tau nume"
+            id="first-name-input"
+            required
+          />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Input invalid</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Primul nume nu poate fi golit</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Al doilea nume <span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Introdu al 2-lea nume"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Input invalid</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Al 2-lea nume nu poate fi golit
+          </span>
+        </div>
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Introdu emailul tau" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Email invalid</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Emailul tau nu poate fi golit</span
+          >
+        </div>
+        <div class="input-section">
+          <label>Telefon <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Introdu numarul tau de telefon"
+            id="phone"
+            required
+          />
+          <span id="phone-error" class="hide required-color error-message"
+            >Numarul tau de telefon trebuie sa aiba 10 cifre</span
+          >
+          <span id="empty-phone" class="hide required-color error-message">
+            Telefonul nu poate fi gol
+          </span>
+        </div>
+        <div class="input-section">
+          <label>Parola <span class="required-color">*</span></label>
+          <input
+            type="password"
+            placeholder="Introdu parola ta"
+            id="password"
+            required
+          />
+          <span id="password-error" class="hide required-color error-message">
+            Parolele ar trebui să aibă litere, simboluri speciale, numere și lungime >=
+            8
+          </span>
+          <span id="empty-password" class="hide required-color error-message">
+            Parola nu poate fi goală
+          </span>
+        </div>
+        <div class="input-section">
+          <label>Confirma Parola <span class="required-color">*</span></label>
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Confirma Parola"
+            required
+          />
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Ar trebui să fie la fel ca parola anterioară</span
+          >
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Parola nu poate fi goală</span
+          >
+        </div>
+        <button id="submit-button">Signup</button>
+      </form>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
